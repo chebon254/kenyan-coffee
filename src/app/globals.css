@@ -12,6 +12,15 @@ body {
 .active-back-color{
   background-color: #642F2F;
 }
+.green-text-color{
+  color: #1C382A;
+}
+.card-text-color{
+  color: #5C3E2F;
+}
+.pouch-color-text{
+  color: #3F231F;
+}
 .footer-back-color{
   background-color: #A17069;
 }
