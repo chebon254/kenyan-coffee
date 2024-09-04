@@ -6,7 +6,18 @@ body {
   height: 100%; 
   background-color: #F2D6BD;
 }
-
+.active-color{
+  color: #642F2F;
+}
+.active-back-color{
+  background-color: #642F2F;
+}
+.footer-back-color{
+  background-color: #A17069;
+}
+.footer-text{
+  color: #5C3E2F;
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;

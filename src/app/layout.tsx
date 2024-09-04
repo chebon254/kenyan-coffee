@@ -8,7 +8,7 @@ const poppins = Poppins({ subsets: ["latin"], weight: ["400", "700"] });
 
 export const metadata: Metadata = {
   title: "Kenyan Coffee",
-  description: "Your Gateway to the World's Best Coffee Experience.",
+  description: "Discover the Rich Legacy of Kenyan Coffee",
 };
 
 export default function RootLayout({
