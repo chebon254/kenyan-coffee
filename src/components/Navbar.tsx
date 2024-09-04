@@ -8,9 +8,11 @@ function Navbar() {
         <div>
             <Link href="/">
                 <Image
-                    className="absolute inset-0 object-cover w-full h-full"
+                    className=""
                     src="/logo.svg"
                     alt="Kenyan Coffee"
+                    width={50}
+                    height={50}
                 />
                 <h1>Kenyan Coffee</h1>
             </Link>

@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={poppins.className} style={{ backgroundColor: "#F2D6BD" }}>
+      <body className={poppins.className}>
         <Navbar/>
           {children}
         <Footer/>
