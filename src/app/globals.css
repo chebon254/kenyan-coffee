@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body {
   height: 100%; 
   background-color: #F2D6BD;
@@ -26,9 +27,4 @@ body {
 }
 .footer-text{
   color: #5C3E2F;
-}
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
 }

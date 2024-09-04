@@ -81,29 +81,105 @@ export default function Home() {
           <div className="grid gap-6 md:grid-cols-3">
             {/* Card 1  */}
             <div className="bg-[#A17069] p-4 rounded-lg text-white">
-              <img src="/tatiana-fernandez.png" alt="Meet the Farmers" className="rounded-t-lg mb-4 w-full"/>
-                <h3 className="font-bold text-2xl mb-2 card-text-color">Meet the Farmers</h3>
-                <p className="text-2xl font-bold text-[#B5A4A2]">Learn about the people and communities who grow your coffee.</p>
+              <img src="/tatiana-fernandez.png" alt="Meet the Farmers" className="rounded-t-lg mb-4 w-full" />
+              <h3 className="font-bold text-2xl mb-2 card-text-color">Meet the Farmers</h3>
+              <p className="text-2xl font-bold text-[#B5A4A2]">Learn about the people and communities who grow your coffee.</p>
             </div>
 
             {/* Card 2  */}
             <div className="bg-[#A17069] p-4 rounded-lg text-white">
-              <img src="/janko-ferlic.png" alt="Coffee Culture" className="rounded-t-lg mb-4 w-full"/>
-                <h3 className="font-bold text-2xl mb-2 card-text-color">Coffee Culture</h3>
-                <p className="text-2xl font-bold text-[#B5A4A2]">Explore the rich culture of coffee and how it influences our offerings.</p>
+              <img src="/janko-ferlic.png" alt="Coffee Culture" className="rounded-t-lg mb-4 w-full" />
+              <h3 className="font-bold text-2xl mb-2 card-text-color">Coffee Culture</h3>
+              <p className="text-2xl font-bold text-[#B5A4A2]">Explore the rich culture of coffee and how it influences our offerings.</p>
             </div>
 
             {/* Card 3  */}
             <div className="bg-[#A17069] p-4 rounded-lg text-white">
-              <img src="/sergey-kotenev.png" alt="Roasting Techniques" className="rounded-t-lg mb-4 w-full"/>
-                <h3 className="font-bold text-2xl mb-2 card-text-color">Roasting Techniques</h3>
-                <p className="text-2xl font-bold text-[#B5A4A2]">Understand the art and science behind coffee roasting.</p>
+              <img src="/sergey-kotenev.png" alt="Roasting Techniques" className="rounded-t-lg mb-4 w-full" />
+              <h3 className="font-bold text-2xl mb-2 card-text-color">Roasting Techniques</h3>
+              <p className="text-2xl font-bold text-[#B5A4A2]">Understand the art and science behind coffee roasting.</p>
             </div>
           </div>
         </div>
         {/* Story Section */}
 
         {/* Process Section */}
+        <div className="process my-16">
+          <h1 className="text-center text-9xl text-[#512615] mt-8 mb-9 font-black">PROCESS</h1>
+          <div className="flex items-start justify-start flex-wrap">
+            <Image
+              className=""
+              src="/coffee-seeds.png"
+              alt="Kenyan Coffee"
+              width={500}
+              height={500}
+            />
+            <p className="font-medium text-5xl text-[#512615] text-center leading-10">Beans are the <br /> seeds of the coffee <br /> cherry</p>
+          </div>
+
+          <div className="">
+            <Image
+              className=""
+              src="/Free-Dotted-Curved-Arrow-Vector-1.png"
+              alt="Kenyan Coffee"
+              width={632}
+              height={571}
+            />
+            <p className="font-medium text-5xl text-[#512615] text-center leading-10">They are cleaned, <br /> triaged and <br /> processed.</p>
+          </div>
+
+          <div className="">
+            <p className="font-medium text-5xl text-[#512615] text-center leading-10">They go through <br /> a roasting <br /> process.</p>
+            <Image
+              className=""
+              src="/roasting.png"
+              alt="Kenyan Coffee"
+              width={500}
+              height={500}
+            />
+          </div>
+
+          <div className="">
+            <Image
+              className=""
+              src="/Free-Dotted-Curved-Arrow-Vector-2.png"
+              alt="Kenyan Coffee"
+              width={632}
+              height={571}
+            />
+          </div>
+
+          <div className="">
+            <p className="font-medium text-5xl text-[#512615] text-center leading-10">Beans are Ground</p>
+            <div>
+              <Image
+                className=""
+                src="/beans-ground.png"
+                alt="Kenyan Coffee"
+                width={500}
+                height={500}
+              />
+              <Image
+                className=""
+                src="/Free-Dotted-Curved-Arrow-Vector-3.png"
+                alt="Kenyan Coffee"
+                width={632}
+                height={571}
+              />
+            </div>
+          </div>
+
+          <div className="">
+            <p className="font-medium text-5xl text-[#512615] text-center leading-10">Freshly roasted <br /> beans make the <br /> best cup of coffee.</p>
+            <Image
+              className=""
+              src="/coffee-cup.png"
+              alt="Kenyan Coffee"
+              width={500}
+              height={500}
+            />
+          </div>
+        </div>
         {/* Process Section */}
 
         {/* Talk To Us Section */}
