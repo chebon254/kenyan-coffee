@@ -38,7 +38,7 @@ function Footer() {
                         <div>
                             <h1 className="text-left footer-text text-base font-bold my-4">Subscribe  To Newsletter</h1>
                             <form action="get" className='text-left'>
-                                <input type="text" placeholder='Enter Email' className='w-60 h-12 px-4 mb-3 rounded-3xl'/>
+                                <input type="text" placeholder='Enter Email' className='w-60 h-12 px-4 mb-3 rounded-3xl outline-none'/>
                                 <br />
                                 <button className='mx-4 active-back-color w-[197px] h-[48px] rounded-3xl text-white text-base font-medium'>Join Waitlist</button>
                             </form>
