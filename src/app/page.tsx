@@ -19,56 +19,61 @@ export default function Home() {
       <div className='max-w-screen-xl mx-auto p-4'>
 
         {/* Banner Section */}
-        <div className="banner flex items-center justify-between flex-wrap ">
-          <div className="banner-text w-2/4">
-            <h1 className="font-bold text-2xl mb-6 active-color">Your Gateway to the World&apos;s Best Coffee Experience.</h1>
-            <p className="font-normal text-base mb-6 green-text-color">Kenya&apos;s finest coffee is celebrated for its bold flavors, bright acidity, and complex aromas. We bring this legendary coffee right to your doorstep, allowing you to savor the true essence of Kenya with every sip.</p>
-            <h3 className="font-medium text-base mt-8 mb-5 text-black">Start Your Coffee Journey Today</h3>
-            <form action="get">
-              <input type="text" placeholder='Your Email' className='w-60 h-12 px-6 mb-3 rounded-3xl outline-none' />
-              <button className='mx-4 active-back-color w-[197px] h-[48px] rounded-3xl text-white text-base font-medium'>Join Waitlist</button>
+        <div className="banner flex flex-col md:flex-row items-center justify-between flex-wrap">
+          <div className="banner-text w-full md:w-2/4 px-4 md:px-0 text-center md:text-left">
+            <h1 className="font-bold text-xl md:text-2xl mb-4 md:mb-6 active-color">Your Gateway to the World&apos;s Best Coffee Experience.</h1>
+            <p className="font-normal text-sm md:text-base mb-4 md:mb-6 green-text-color">
+              Kenya&apos;s finest coffee is celebrated for its bold flavors, bright acidity, and complex aromas. We bring this legendary coffee right to your doorstep, allowing you to savor the true essence of Kenya with every sip.
+            </p>
+            <h3 className="font-medium text-sm md:text-base mt-6 md:mt-8 mb-4 md:mb-5 text-black">Start Your Coffee Journey Today</h3>
+            <form action="get" className="flex flex-col md:flex-row items-center justify-center md:justify-start">
+              <input type="text" placeholder="Your Email" className="w-full md:w-60 h-12 px-4 md:px-6 mb-3 md:mb-0 rounded-3xl outline-none" />
+              <button className="w-full md:w-auto mx-0 md:mx-4 active-back-color h-[48px] rounded-3xl text-white text-base font-medium">
+                Join Waitlist
+              </button>
             </form>
           </div>
-          <div className="banner-image w-2/4 relative h-[800px]">
+          <div className="banner-image w-full md:w-2/4 relative h-[400px] md:h-[800px] mt-8 md:mt-0">
             <Image
-              className="my-24 relative z-10"
+              className="my-12 md:my-24 relative z-10 mx-auto"
               src="/banner-coffee-bag.png"
               alt="Kenyan Coffee"
-              width={450}
-              height={650}
+              width={350}
+              height={450}
             />
             <Image
               className="absolute top-1/2 left-0 transform -translate-y-1/2 z-0"
+              src="/banner-coffee-back.png"
+              alt="Kenyan Coffee"
+              width={700}
+              height={700}
+            />
+          </div>
+        </div>
+
+        {/* Banner Section */}
+
+        {/* Why Section */}
+        <div className="flex flex-col-reverse md:flex-row items-center justify-between flex-wrap">
+          <div className="why-image w-full md:w-2/4 relative overflow-visible h-[400px] md:h-[800px] order-2 md:order-1">
+            <Image
+              className="my-12 md:my-24 absolute top-1/2 right-0 transform -translate-y-1/2 z-10"
+              src="/Coffee_Craft_Pouch_Mockup.png"
+              alt="Kenyan Coffee"
+              width={450}
+              height={600}
+            />
+            <Image
+              className="absolute top-1/2 -right-9 transform -translate-y-1/2 z-0"
               src="/banner-coffee-back.png"
               alt="Kenyan Coffee"
               width={1000}
               height={1000}
             />
           </div>
-        </div>
-        {/* Banner Section */}
-
-        {/* Why Section */}
-        <div className="flex items-center justify-between flex-wrap">
-          <div className="why-image w-2/4 relative overflow-visible h-[800px]">
-            <Image
-              className="my-24 absolute top-1/2 right-0 transform -translate-y-1/2 z-10"
-              src="/Coffee_Craft_Pouch_Mockup.png"
-              alt="Kenyan Coffee"
-              width={550}
-              height={750}
-            />
-            <Image
-              className="absolute top-1/2 -right-9 transform -translate-y-1/2 z-0"
-              src="/banner-coffee-back.png"
-              alt="Kenyan Coffee"
-              width={1200}
-              height={1200}
-            />
-          </div>
-          <div className="why-text w-2/4">
-            <h1 className="font-bold text-2xl mb-6 active-color text-center">Why Kenyan Coffee Stands Out</h1>
-            <div className="bg-[#A17069] pouch-color-text pt-8 px-4 pb-4 rounded-lg max-w-xl mx-auto">
+          <div className="why-text w-full md:w-2/4 px-4 md:px-0 order-1 md:order-2">
+            <h1 className="font-bold text-xl md:text-2xl mb-4 md:mb-6 active-color text-center md:text-left">Why Kenyan Coffee Stands Out</h1>
+            <div className="bg-[#A17069] pouch-color-text pt-8 px-4 pb-4 rounded-lg max-w-full md:max-w-xl mx-auto">
               <p className="mb-4">Kenyan coffee is known for its vibrant acidity, full body, and rich, fruity-to-floral flavors with berry, citrus, and wine-like notes. Its unique characteristics stem from:</p>
               <ul className="list-disc space-y-4 pl-5">
                 <li>
@@ -84,6 +89,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+
         {/* Why Section */}
 
         {/* Story Section */}
@@ -143,7 +149,7 @@ export default function Home() {
             </div>
           </div>
 
-          
+
           <div className="flex items-center justify-end">
             <p className={`font-medium text-5xl text-[#512615] text-center leading-10 ${jua.className}`}>They go through <br /> a roasting <br /> process.</p>
             <Image
