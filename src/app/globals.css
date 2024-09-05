@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&family=Jua&display=swap');
 body {
   height: 100%; 
   background-color: #F2D6BD;
@@ -27,4 +27,14 @@ body {
 }
 .footer-text{
   color: #5C3E2F;
+}
+.jomhuria-regular {
+  font-family: "Jomhuria", serif !important;
+  font-weight: 400;
+  font-style: normal;
+}
+.jua-regular {
+  font-family: "Jua", sans-serif !important;
+  font-weight: 400;
+  font-style: normal;
 }

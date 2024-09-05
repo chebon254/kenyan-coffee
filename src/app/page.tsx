@@ -1,4 +1,17 @@
 import Image from "next/image";
+import { Jua, Jomhuria } from 'next/font/google';
+
+// For Jua font
+const jua = Jua({
+  subsets: ["latin"], 
+  weight: ["400"] // Jua only has a weight of 400
+});
+
+// For Jomhuria font
+const jomhuria = Jomhuria({
+  subsets: ["latin"], 
+  weight: ["400"] // Jomhuria only has a weight of 400
+});
 
 export default function Home() {
   return (
@@ -105,7 +118,7 @@ export default function Home() {
 
         {/* Process Section */}
         <div className="process my-16">
-          <h1 className="text-center text-9xl text-[#512615] mt-8 mb-9 font-black">PROCESS</h1>
+        <h1 className={`text-center text-9xl text-[#512615] mt-8 mb-9 font-black ${jomhuria.className}`}>PROCESS</h1>
           <div className="flex items-start justify-start flex-wrap">
             <Image
               className=""
@@ -114,10 +127,10 @@ export default function Home() {
               width={500}
               height={500}
             />
-            <p className="font-medium text-5xl text-[#512615] text-center leading-10">Beans are the <br /> seeds of the coffee <br /> cherry</p>
+            <p className={`font-medium text-5xl text-[#512615] text-center leading-10 mt-8 ${jua.className}`}>Beans are the <br /> seeds of the coffee <br /> cherry</p>
           </div>
 
-          <div className="">
+          <div className="flex items-center justify-start">
             <Image
               className=""
               src="/Free-Dotted-Curved-Arrow-Vector-1.png"
@@ -125,11 +138,11 @@ export default function Home() {
               width={632}
               height={571}
             />
-            <p className="font-medium text-5xl text-[#512615] text-center leading-10">They are cleaned, <br /> triaged and <br /> processed.</p>
+            <p className={`font-medium text-5xl text-[#512615] text-center leading-10 ${jua.className}`}>They are cleaned, <br /> triaged and <br /> processed.</p>
           </div>
 
           <div className="">
-            <p className="font-medium text-5xl text-[#512615] text-center leading-10">They go through <br /> a roasting <br /> process.</p>
+            <p className={`font-medium text-5xl text-[#512615] text-center leading-10 ${jua.className}`}>They go through <br /> a roasting <br /> process.</p>
             <Image
               className=""
               src="/roasting.png"
@@ -150,7 +163,7 @@ export default function Home() {
           </div>
 
           <div className="">
-            <p className="font-medium text-5xl text-[#512615] text-center leading-10">Beans are Ground</p>
+            <p className={`font-medium text-5xl text-[#512615] text-center leading-10 ${jua.className}`}>Beans are Ground</p>
             <div>
               <Image
                 className=""
@@ -170,7 +183,7 @@ export default function Home() {
           </div>
 
           <div className="">
-            <p className="font-medium text-5xl text-[#512615] text-center leading-10">Freshly roasted <br /> beans make the <br /> best cup of coffee.</p>
+            <p className={`font-medium text-5xl text-[#512615] text-center leading-10 ${jua.className}`}>Freshly roasted <br /> beans make the <br /> best cup of coffee.</p>
             <Image
               className=""
               src="/coffee-cup.png"
