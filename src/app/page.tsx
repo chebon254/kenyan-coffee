@@ -15,7 +15,7 @@ const jomhuria = Jomhuria({
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="overflow-hidden">
       <div className='max-w-screen-xl mx-auto p-4'>
 
         {/* Banner Section */}
@@ -28,9 +28,7 @@ export default function Home() {
             <h3 className="font-medium text-sm md:text-base mt-6 md:mt-8 mb-4 md:mb-5 text-black">Start Your Coffee Journey Today</h3>
             <form action="get" className="flex flex-col md:flex-row items-center justify-center md:justify-start">
               <input type="text" placeholder="Your Email" className="w-full md:w-60 h-12 px-4 md:px-6 mb-3 md:mb-0 rounded-3xl outline-none" />
-              <button className="w-full md:w-auto mx-0 md:mx-4 active-back-color h-[48px] rounded-3xl text-white text-base font-medium">
-                Join Waitlist
-              </button>
+              <button className='mx-0 md:mx-4 active-back-color w-[197px] h-[48px] rounded-3xl text-white text-base font-medium'>Join Waitlist</button>
             </form>
           </div>
           <div className="banner-image w-full md:w-2/4 relative h-[400px] md:h-[800px] mt-8 md:mt-0">
@@ -124,7 +122,7 @@ export default function Home() {
         {/* Process Section */}
         <div className="process my-16">
           <h1 className={`text-center text-9xl text-[#512615] mt-8 mb-9 font-black ${jomhuria.className}`}>PROCESS</h1>
-          <div className="flex items-start justify-start flex-wrap">
+          <div className="flex items-start justify-start flex-wrap py-5 md:py-2">
             <Image
               className=""
               src="/coffee-seeds.png"
@@ -135,7 +133,7 @@ export default function Home() {
             <p className={`font-medium text-5xl text-[#512615] text-center leading-10 mt-14 ${jua.className}`}>Beans are the <br /> seeds of the coffee <br /> cherry</p>
           </div>
 
-          <div className="flex items-center justify-center relative">
+          <div className="flex items-center justify-center relative py-5 md:py-2">
             <div className="flex items-center relative justify-start flex-wrap">
               <Image
                 style={{ transform: 'rotate(25deg)' }}
@@ -149,7 +147,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="md:hidden">
+          <div className="md:hidden py-5 md:py-2">
             <div className="flex items-center relative justify-start">
               <Image
                 style={{ transform: 'rotate(25deg)' }}
@@ -162,8 +160,7 @@ export default function Home() {
             </div>
           </div>
 
-
-          <div className="flex items-center justify-end  flex-wrap">
+          <div className="flex items-center justify-end  flex-wrap py-5 md:py-2">
             <p className={`font-medium text-5xl text-[#512615] text-center leading-10 ${jua.className}`}>They go through <br /> a roasting <br /> process.</p>
             <Image
               className=""
@@ -174,7 +171,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center py-5 md:py-2">
             <Image
               style={{ transform: 'rotate(-25deg)' }}
               className="md:rotate-0"
@@ -185,7 +182,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="">
+          <div className="py-5 md:py-2">
             <p className={`font-medium text-5xl text-[#512615] text-left leading-10 ${jua.className}`}>Beans are Ground</p>
             <br />
             <div>
@@ -199,7 +196,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div >
+          <div className="py-5 md:py-2">
             <div className="flex items-center justify-center">
               <Image
                 style={{ transform: 'rotate(25deg)' }}
@@ -212,7 +209,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex items-center justify-end flex-wrap">
+          <div className="flex items-center justify-end flex-wrap py-5 md:py-2">
             <p className={`font-medium text-5xl text-[#512615] text-center leading-10 ${jua.className}`}>Freshly roasted <br /> beans make the <br /> best cup of coffee.</p>
             <Image
               className=""
