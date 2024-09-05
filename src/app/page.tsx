@@ -205,9 +205,9 @@ export default function Home() {
         {/* Process Section */}
 
         {/* Talk To Us Section */}
-        <div className="talk-to-us my-10 flex justify-start items-center">
-          <h1 className="font-bold text-6xl active-color">DONT BE SHY <br /> TALK TO US</h1>
-          <div className="text-btn px-10">
+        <div className="talk-to-us my-10 flex justify-start items-center flex-wrap">
+          <h1 className="font-bold text-6xl active-color max-w-[451px]">DONT BE SHY TALK TO US</h1>
+          <div className="text-btn px-0 md:px-10">
             <p className="text-black font-medium text-2xl">Say Hello.</p>
             <button className="my-4 active-back-color w-[131px] h-[48px] rounded-3xl text-white text-base font-medium">Contact Us</button>
           </div>
