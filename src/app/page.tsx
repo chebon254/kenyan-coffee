@@ -54,7 +54,7 @@ export default function Home() {
         {/* Banner Section */}
 
         {/* Why Section */}
-        <div className="flex flex-col-reverse md:flex-row items-center justify-between flex-wrap">
+        <div className="flex items-center justify-between flex-wrap">
           <div className="why-image w-full md:w-2/4 relative overflow-visible h-[400px] md:h-[800px] order-2 md:order-1">
             <Image
               className="my-12 md:my-24 absolute top-1/2 right-0 transform -translate-y-1/2 z-10"
@@ -89,7 +89,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-
         {/* Why Section */}
 
         {/* Story Section */}
@@ -137,20 +136,34 @@ export default function Home() {
           </div>
 
           <div className="flex items-center justify-center relative">
-            <div className="flex items-center relative justify-start">
+            <div className="flex items-center relative justify-start flex-wrap">
               <Image
-                className="-mt-20 "
+                style={{ transform: 'rotate(25deg)' }}
+                className=" md:rotate-0 -mt-20 "
                 src="/Free-Dotted-Curved-Arrow-Vector-1.png"
                 alt="Kenyan Coffee"
                 width={632}
                 height={571}
               />
-              <p className={`absolute top-16 -right-10 font-medium text-5xl text-[#512615] text-center leading-10 ${jua.className}`}>They are cleaned, <br /> triaged and <br /> processed.</p>
+              <p className={`md:absolute md:top-16 md:-right-10 font-medium text-5xl text-[#512615] text-center leading-10 ${jua.className}`}>They are cleaned, <br /> triaged and <br /> processed.</p>
+            </div>
+          </div>
+
+          <div className="md:hidden">
+            <div className="flex items-center relative justify-start">
+              <Image
+                style={{ transform: 'rotate(25deg)' }}
+                className=" md:rotate-0 -mt-20"
+                src="/Free-Dotted-Curved-Arrow-Vector-1.png"
+                alt="Kenyan Coffee"
+                width={632}
+                height={571}
+              />
             </div>
           </div>
 
 
-          <div className="flex items-center justify-end">
+          <div className="flex items-center justify-end  flex-wrap">
             <p className={`font-medium text-5xl text-[#512615] text-center leading-10 ${jua.className}`}>They go through <br /> a roasting <br /> process.</p>
             <Image
               className=""
@@ -163,7 +176,8 @@ export default function Home() {
 
           <div className="flex items-center justify-center">
             <Image
-              className=""
+              style={{ transform: 'rotate(-25deg)' }}
+              className="md:rotate-0"
               src="/Free-Dotted-Curved-Arrow-Vector-2.png"
               alt="Kenyan Coffee"
               width={632}
@@ -176,7 +190,7 @@ export default function Home() {
             <br />
             <div>
               <Image
-                className=""
+                className=" md:rotate-0 "
                 src="/beans-ground.png"
                 alt="Kenyan Coffee"
                 width={500}
@@ -188,7 +202,8 @@ export default function Home() {
           <div >
             <div className="flex items-center justify-center">
               <Image
-                className=""
+                style={{ transform: 'rotate(25deg)' }}
+                className=" md:rotate-0 "
                 src="/Free-Dotted-Curved-Arrow-Vector-3.png"
                 alt="Kenyan Coffee"
                 width={632}
@@ -197,7 +212,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex items-center justify-end">
+          <div className="flex items-center justify-end flex-wrap">
             <p className={`font-medium text-5xl text-[#512615] text-center leading-10 ${jua.className}`}>Freshly roasted <br /> beans make the <br /> best cup of coffee.</p>
             <Image
               className=""
