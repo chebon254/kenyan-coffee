@@ -7,6 +7,10 @@ body {
   height: 100%; 
   background-color: #F2D6BD;
 }
+.body-back {
+  height: 100%; 
+  background-color: #F2D6BD;
+}
 .active-color{
   color: #642F2F;
 }
